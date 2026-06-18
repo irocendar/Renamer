@@ -36,4 +36,6 @@ This mod has a two line i18n. If you want to contribute a translation for a non-
 While this mod is open-source, I prefer that it not be reposted or forked (here or on any other platform) while I'm still active in the modding community.
 
 # Links
-[Nexus Page](https://www.nexusmods.com/games/stardewvalley/mods/47846)
+
+[Nexus Page](https://www.nexusmods.com/games/stardewvalley/mods/47846) \
+[GGMods Page](https://ggmods.com/game/stardew-valley/mod/162/)
