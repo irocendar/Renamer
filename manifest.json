@@ -1,0 +1,22 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "irocendar.Renamer",
+  "Name": "Renamer",
+  "Author": "irocendar",
+  "Version": "1.0.0",
+  "Description": "Rename your pets, kids, horses and farms.",
+  "MinimumApiVersion": "4.3.2",
+  "MinimumGameVersion": "1.6.0",
+  "EntryDll": "Renamer.dll",
+  "UpdateKeys": [
+    "Nexus:47846",
+    "Nexus:0000"
+  ]
+}

@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <StartArguments>--mods-path "$(USERPROFILE)\AppData\Roaming\Stardrop\Data\Selected Mods"</StartArguments>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>irocendar</Authors>
+        <Description>Rename your pets, kids, horses and farms.</Description>
+        <UniqueID>irocendar.Renamer</UniqueID>
+        <Version>1.0.0</Version>
+        <!-- MinimumApiVersion has to be set to that for android SMAPI compat -->
+        <MinimumApiVersion_Behavior>Ignore</MinimumApiVersion_Behavior>
+        <MinimumApiVersion>4.3.2</MinimumApiVersion>
+        <MinimumGameVersion>1.6.0</MinimumGameVersion>
+        <UpdateKeys>Nexus:47846</UpdateKeys>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/..'))=irocendar/</PathMap>
+        <PathMap>$(PathMap),$([System.IO.Path]::GetFullPath('$(NuGetPackageRoot)/'))=nuget/</PathMap>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Folder Include="assets"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1"/>
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Publicize Include="Stardew Valley" IncludeCompilerGeneratedMembers="false" />
+        <DoNotPublicize Include="Stardew Valley:Netcode" />
+    </ItemGroup>
+
+</Project>
